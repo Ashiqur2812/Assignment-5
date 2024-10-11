@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Page</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4ff3a77b32.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              secondary: "#F9F7F3",
+            },
+            fontFamily: {
+              Lexend: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Lexend">
+    <header class="sticky z-50 shadow-sm top-0 backdrop-blur-2xl">
+      <section class="bg-secondary px-12">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div> -->
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <img src="./assets/logo.png" alt="" />
+                <a class="ml-2 text-lg font-bold">Donate Bangladesh</a>
+              </ul>
+            </div>
+            <a id="home" class="btn text-lg bg-primary px-8">Home</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 flex items-center">
+              <img src="./assets/logo.png" alt="" />
+              <a class="ml-2 text-lg font-bold">Donate Bangladesh</a>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <img src="./assets/coin.png" alt="" />
+            <a class="ml-2"><span id="remaining-balance">5500</span> BDT</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="w-11/12 mx-auto mt-8 text-4xl font-bold">
+        <h1 class="ml-8 lg:ml-0">
+          Important FAQ <i class="fa-regular fa-circle-question"></i>
+        </h1>
+      </section>
+
+      <section class="w-11/12 mx-auto mt-12">
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                DOM is a programming interface for web documents. It represents
+                the structure of a web page, allowing scripts to interact with,
+                manipulate, and modify the document's content, structure, and
+                style.It represents the document as a tree of nodes, where each
+                node is an object representing part of the document.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>We can select elements by taking id, class, and tag name.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a pattern in the DOM where we attach a
+                single event listener to a parent element to handle events
+                triggered by its child elements, rather than attaching
+                individual event listeners to each child. This is useful for
+                managing events efficiently, especially when dealing with
+                dynamically added elements or a large number of child elements.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an elements attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                We can manipulate an elements attributes and styles using the
+                DOM for several ways. Even this allows us to dynamically change
+                things like class, id, src, href, inline CSS styles, and more.
+                By this we can set, retrieve, and remove the value of an
+                attribute from an element. We can also manipulate an element’s
+                inline styles using the style property like color, font size,
+                background color etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/second.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
