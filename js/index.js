@@ -6,10 +6,6 @@ function getInputValueById(id) {
   return parseFloat(document.querySelector(id).value);
 }
 
-document.querySelector("#blog").addEventListener("click", function () {
-  window.location.href = "file:///D:/Projects/B10-Assignment-5/second.html";
-});
-
 function removeElementValueById(id) {
   return document.querySelector(id).classList.remove("hidden");
 }
